@@ -9,10 +9,10 @@ html
         link(rel="stylesheet", href="css/fontawesome.css")
     body
         .content
-            .thumbnail-list.grid-3
-                section.product-thumbnail
+            .product-card-list
+                section.product-card
 
-                    div.product-pictures
+                    div.product-card-pictures
                         .add-to-fav(title="Добавить в избранное")
                             span Добавить в избранное
 
@@ -20,11 +20,17 @@ html
                             img.img-responsive(alt="FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK" title="FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK" src="https://www.muztorg.ru/files/sized/f250x250/212/4a3/aqo/x5w/4kg/gks/0gg/sgo/w/2124a3aqox5w4kggks0ggsgow.jpg")
 
                     .product-icons
-                        span.id.hidden(style="display: none;") A089212
                         .product-icon.product-icon-hit хит
                         .product-icon.product-icon-instal 0-0-24
                         .product-icon.product-icon-arenda + В аренду
-                    .product-caption
+
+                    .product-weight
+                        span Вес:
+                        .product-weight-item.product-weight-item-1 10010789
+                        .product-weight-item.product-weight-item-2 0
+                        .product-weight-item.product-weight-item-3 0
+
+                    .product-card-caption
                         .product-catalog-grid
                             a(href="/category/elektrogitary") Электрогитары
                         .product-header
@@ -46,9 +52,6 @@ html
                                 | &nbsp;бонусов
                                 a(href="#ModalBonus" data-toggle="modal" data-target="#ModalBonus")
                                 i.fa.fa-question-circle
-                        .product-text
-                        .id
-                            span Артикул: A089212
                         .product-thumb-nav
                             .product-button
                                 a.btn.product-buy.btn-orange
@@ -62,8 +65,8 @@ html
                                     span 517&nbsp;руб./мес
 
 
-                section.product-thumbnail
-                    div.product-pictures
+                section.product-card
+                    div.product-card-pictures
                         .add-to-fav active(title="Добавить в избранное")
                             span Добавить в избранное
 
@@ -71,12 +74,18 @@ html
                             img.img-responsive(alt="YAMAHA C40" title="YAMAHA C40" src="https://www.muztorg.ru/files/sized/f250x250/96h/q5c/zvf/sgs/kgk/8co/kgk/40k/8/96hq5czvfsgskgk8cokgk40k8.jpg")
 
                     .product-icons
-                        span.id.hidden(style="display: none;") A089212
-                        .product-icon.product-icon-price-down Цена снижена
+                        .product-icon.product-icon-price-down Цена снижена!
                         .product-icon.product-icon-hit хит
                         .product-icon.product-icon-instal 0-0-24
                         .product-icon.product-icon-arenda + В аренду
-                    .product-caption
+
+                    .product-weight
+                        span Вес:
+                        .product-weight-item.product-weight-item-1 10010789
+                        .product-weight-item.product-weight-item-2 0
+                        .product-weight-item.product-weight-item-3 0
+
+                    .product-card-caption
                         .product-catalog-grid
                             a(href="/category/elektrogitary") Классические гитары
                         .product-header
@@ -98,9 +107,7 @@ html
                                 | &nbsp;бонусов
                                 a(href="#ModalBonus" data-toggle="modal" data-target="#ModalBonus")
                                 i.fa.fa-question-circle
-                        .product-text
-                        .id
-                            span Артикул: A089212
+
                         .product-thumb-nav
                             .product-button
                                 a.btn.product-buy.btn-orange
@@ -114,20 +121,27 @@ html
                                     | В рассрочку
                                     span 517&nbsp;руб./мес
 
-                section.product-thumbnail
-                    div.product-pictures
+                section.product-card
+                    div.product-card-pictures
                         .add-to-fav(title="Добавить в избранное")
                             span Добавить в избранное
 
                         a(href="/product/A089212")
-                            img.img-responsive(alt="FOCUSRITE SCARLETT 2I2 3RD GEN" title="FOCUSRITE SCARLETT 2I2 3RD GEN" src="https://www.muztorg.ru/files/sized/f250x250/bec/zla/3db/z4g/g8w/w0g/g0k/kwc/g/beczla3dbz4gg8ww0gg0kkwcg.jpg")
+                            img.img-responsive(alt="FOCUSRITE SCARLETT 2I2 3RD GEN" title="FOCUSRITE SCARLETT 2I2 3RD GEN" src="https://www.muztorg.ru/files/sized/f250x250/4wv/iwx/0fd/6o0/4kc/gsg/w4w/40w/o/4wviwx0fd6o04kcgsgw4w40wo.jpg")
 
                     .product-icons
-                        span.id.hidden(style="display: none;") A089212
                         .product-icon.product-icon-hit хит
                         .product-icon.product-icon-instal 0-0-24
                         .product-icon.product-icon-arenda + В аренду
-                    .product-caption
+
+                    .product-weight
+                        span Вес:
+                        .product-weight-item.product-weight-item-1 10010789
+                        .product-weight-item.product-weight-item-2 0
+                        .product-weight-item.product-weight-item-3 0
+
+
+                    .product-card-caption
                         .product-catalog-grid
                             a(href="/category/elektrogitary") Звуковые карты
                         .product-header
@@ -149,9 +163,6 @@ html
                                 | &nbsp;бонусов
                                 a(href="#ModalBonus" data-toggle="modal" data-target="#ModalBonus")
                                 i.fa.fa-question-circle
-                        .product-text
-                        .id
-                            span Артикул: A089212
                         .product-thumb-nav
                             .product-button
                                 a.btn.product-buy.btn-orange
@@ -164,7 +175,9 @@ html
                                 .product-installment-plan
                                     | В рассрочку
                                     span 567&nbsp;руб./мес
-
+        .overlay_popup
+        .popup-add-bonus-place.popup
+            .object 123
 
         script(src="js/libs.min.js")
         script(src="js/main.js")
