@@ -30,5 +30,24 @@ $(document).ready(function(){
     });
 
 
+    $(document).on("click",'.product-add-bonus-place .fa',function(){
+        var popup_id = $('.popup-add-bonus-place');
+        $(popup_id).show();
+        $('.overlay_popup').show();
+    })
+    $(document).on("click",'.overlay_popup',function(){
+        $('.overlay_popup, .popup').hide();
+    })
+
+    $(document).on("click",'.product-existence .fa',function(){
+        var popup_id = $('.popup-add-bonus-place');
+        $(popup_id).show();
+        $('.overlay_popup').show();
+    })
+    $(document).on("click",'.overlay_popup',function(){
+        $('.overlay_popup, .popup').hide();
+    })
+
+
 
 })
