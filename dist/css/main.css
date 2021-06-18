@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Roboto';
   src: local("Roboto"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
@@ -297,6 +298,31 @@ body {
 .product-weight-item-2 {
   color: #090;
   border-color: #090; }
+
+/* Окно */
+.overlay_popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5; }
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px; }
+
+.object {
+  height: 100px;
+  background-color: #eee;
+  padding: 25px; }
 
 @media (min-width: 768px) {
   .product-card-pictures a img {
